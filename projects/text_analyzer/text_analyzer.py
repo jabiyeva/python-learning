@@ -20,9 +20,9 @@ rd_word = random.choice(words)
 
 contains_digits = "No"
 for char in text_cleaned:
-    if char in digits:
-        contains_digits = "Yes"
-        break
+        if char.isdigit():
+            contains_digits = "Yes"
+            break
 
 print("\n=== Text Analysis Report ===")
 print(f"{'Original text:':<16} {text}")
